@@ -7,7 +7,6 @@ export const comments = (state = initialState, action) => {
     case SAVE_COMMENT:
       return [...state, action.payload];
     case FETCH_COMMENTS:
-      console.log(action.payload.data);
       const comments = action.payload.data.map(comment => comment.name);
       return [...state, ...comments];
     default:
