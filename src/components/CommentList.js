@@ -11,7 +11,8 @@ const CommentList = ({comments}) => {
 
   return (
     <div>
-      {renderComments()}
+      <h4>Comment List</h4>
+      <ul>{renderComments()}</ul>
     </div>
   );
 }
